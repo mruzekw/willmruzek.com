@@ -1,5 +1,5 @@
 ---
-title: "The Butterfly of the Edge"
+title: "Test Netifly Deploy"
 subtitle: "This is a subtitle"
 cover: "https://unsplash.it/1152/300/?random?TheButterflyoftheEdge"
 category: "tech"
