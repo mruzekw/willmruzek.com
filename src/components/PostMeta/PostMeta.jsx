@@ -19,7 +19,7 @@ class PostMeta extends Component {
             className="date"
             dateTime="{{ .Date.Format &quot;2006-01-02T15:04:05Z07:00&quot; }}"
           >
-            {fecha.format(new Date(post.date), 'YYYY, MMM DD')}
+            {fecha.format(fecha.parse(post.date, 'YYYY-MM-DD'), 'YYYY, MMM DD')}
           </time>
         </span>
 
