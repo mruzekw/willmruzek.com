@@ -16,7 +16,7 @@ class Index extends React.Component {
         <Header
           title={config.siteTitle}
           description={config.siteDescription}
-          isHome
+          showTitle
         />
         <main id="main" className="main">
           {/* <article className="entry">

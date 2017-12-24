@@ -6,21 +6,18 @@ import config from 'config/site.toml';
 
 class AboutPage extends Component {
   render() {
-    const { html } = this.props.data.markdownRemark;
+    const { markdownRemark } = this.props.data;
+    const { title } = markdownRemark.frontmatter;
     return (
       <div className="about-container">
-        <Helmet title={`About | ${config.siteTitle}`} />
-        <Header
-          title={config.siteTitle}
-          description={config.siteDescription}
-          isHome
-        />
+        <Helmet title={`${title} | ${config.siteTitle}`} />
+        <Header title={title} showTitle />
         <main id="main" className="main">
           <article lang="en" className="entry">
             <div
               className="entry-content"
               dangerouslySetInnerHTML={{
-                __html: html
+                __html: markdownRemark.html
               }}
             />
           </article>
@@ -36,8 +33,11 @@ export default AboutPage;
 /* eslint no-undef: "off"*/
 export const pageQuery = graphql`
   query AboutPageQuery {
-    markdownRemark(frontmatter: { title: { eq: "About" } }) {
+    markdownRemark(id: { regex: "/pages/about.md/" }) {
       html
+      frontmatter {
+        title
+      }
     }
   }
 `;

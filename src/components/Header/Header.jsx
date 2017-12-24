@@ -3,18 +3,14 @@ import MainMenu from 'components/MainMenu/MainMenu';
 
 class Header extends Component {
   render() {
-    const { title, description, isHome } = this.props;
+    const { title, description, showTitle } = this.props;
     return (
       <header id="header" className="header-container">
         <div className="header site-header">
           <MainMenu />
-          {isHome && (
+          {showTitle && (
             <div className="header-info">
-              {isHome ? (
-                <h1 className="site-title title">{title}</h1>
-              ) : (
-                <p className="site-title title">{title}</p>
-              )}
+              <h1 className="site-title title">{title}</h1>
               <p className="site-description subtitle">{description}</p>
             </div>
           )}
