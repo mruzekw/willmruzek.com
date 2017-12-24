@@ -1,0 +1,56 @@
+# The name of directory that contains your posts.
+blogPostDir = "posts"
+# Site title.
+siteTitle = "Will Mruzek"
+# Alternative site title for SEO.
+siteTitleAlt = "Will Mruzek"
+# Logo used for SEO and manifest.Starter
+siteLogo = "/logos/logo-1024.png"
+# Domain of your website without pathPrefix.
+siteUrl = "https://willmruzek.com"
+
+pathPrefix = "/blog"
+# Website description used for RSS feeds/meta description tag.
+siteDescription = "A collection of my thoughts on tech and current events"
+# Path to the RSS file.GatsbyJS stater with Advanced design in mind."
+siteRss = "/rss.xml"
+# FB Application ID for using app insightsml
+siteFBAppID = ""
+# GA tracking ID.
+googleAnalyticsID = ""
+# Default category for posts.
+postDefaultCategoryID = "Tech"
+# Username to display in the author segment.
+userName = "Will Mruzek"
+# Optionally renders "Follow Me" in the UserInfo segment.
+userTwitter = "willmruzek"
+# User location to display in the author segment.
+userLocation = "Austin, TX, USA, Earth"
+# User avatar to display in the author segment.
+userAvatar = "https://api.adorable.io/avatars/150/test.png"
+# User description to display in the author segment.
+userDescription = """
+  Yeah, I like animals better than people sometimes... Especially dogs. Dogs are the best.
+  Every time you come home, they act like they haven't seen you in a year. And the good thing
+  about dogs... is they got different dogs for different people.
+"""
+# Copyright string for the footer of the website and RSS feed.
+copyrightHolder = "Will Mruzek"
+# Used for setting manifest and progress theme colors.
+themeColor = "#c62828"
+# Used for setting manifest background color.
+backgroundColor = "#e0e0e0"
+
+[social]
+
+  [social.email]
+  address = "mruzekw@gmail.com"
+
+  [social.twitter]
+  username = "willmruzek"
+
+  [social.linkedin]
+  username = "willmruzek"
+
+  [social.github]
+  username = "mruzekw"

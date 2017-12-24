@@ -1,0 +1,7 @@
+[[main]]
+  name = 'Home'
+  url = '/'
+
+[[main]]
+  name = 'About'
+  url = '/about'

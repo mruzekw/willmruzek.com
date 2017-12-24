@@ -1,0 +1,20 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["react", "jsx-a11y", "import"],
+  "rules": {
+    "react/prefer-stateless-function": "off",
+    "react/prop-types": "off",
+    "react/no-danger": "off",
+    "import/no-unresolved": [
+      2,
+      { "ignore": ["^components/.*$", "^config/.*$"] }
+    ],
+    "import/no-extraneous-dependencies": "off",
+    "import/extensions": [2, { "js": "never", "jsx": "never" }],
+    "import/first": "off"
+  },
+  "env": {
+    "browser": true
+  }
+}
