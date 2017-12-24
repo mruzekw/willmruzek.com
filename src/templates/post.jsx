@@ -31,7 +31,7 @@ export default class PostTemplate extends React.Component {
         <main id="main" className="main">
           <article lang="en" className="entry">
             <PostHeader post={post} timeToRead={postNode.timeToRead} />
-            <PostCover cover={post.cover} />
+            {post.cover && <PostCover cover={post.cover} />}
             {/* <details class='entry-toc'>
               <summary class='toc-title'>
                 <span>
