@@ -1,7 +1,6 @@
 {
   "name": "gatsby-starter-advanced",
-  "description":
-    "GatsbyJS starter that includes examples for advanced use cases.",
+  "description": "GatsbyJS starter that includes examples for advanced use cases.",
   "version": "1.1.0",
   "author": "Ruben Harutyunyan <vagr9k@gmail.com>",
   "dependencies": {
@@ -47,7 +46,7 @@
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
     "gh-pages": "^1.0.0",
-    "prettier": "^1.5.3",
+    "prettier": "^1.9.2",
     "remark-cli": "^4.0.0",
     "remark-preset-lint-recommended": "^3.0.1",
     "stylefmt": "^6.0.0",
@@ -57,7 +56,9 @@
     "toml-loader": "^1.0.0",
     "write-good": "^0.11.3"
   },
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
@@ -74,6 +75,8 @@
     "format:js": "prettier '**/*.{js,jsx}' --write"
   },
   "remarkConfig": {
-    "plugins": ["remark-preset-lint-recommended"]
+    "plugins": [
+      "remark-preset-lint-recommended"
+    ]
   }
 }
